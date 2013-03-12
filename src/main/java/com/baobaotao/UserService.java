@@ -8,7 +8,7 @@ import com.baobaotao.domain.User;
 public class UserService {
    
 	public void createUser(User user){
-		System.out.println("save user.");
+		System.out.println("save user");
 	}
 
 	public User getUserById(String userId) {
