@@ -110,11 +110,11 @@
 	<bean class="org.springframework.web.servlet.view.XmlViewResolver"
 		p:order="20" p:location="classpath:/spring/baobaotao-views.xml" />
 
-	<!-- <bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver"
-		p:order="30" p:basename="i18n/views" /> -->
+	<bean class="org.springframework.web.servlet.view.ResourceBundleViewResolver"
+		p:order="30" p:basename="i18n/views" />
 
     <!-- 协商多种视图解析器 -->
-	<!-- <bean
+	<bean
 		class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver"
 		p:order="0" p:ignoreAcceptHeader="true" p:favorPathExtension="false"
 		p:favorParameter="true" p:parameterName="format" p:defaultContentType="text/html">
@@ -134,7 +134,7 @@
 					p:modelKey="userList" p:marshaller-ref="xmlMarshaller" />
 			</list>
 		</property>
-	</bean> -->
+	</bean>
 
     <!-- 本地化解析 -->  
 	<bean id="localeResolver"

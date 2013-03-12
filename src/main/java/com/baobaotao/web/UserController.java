@@ -602,6 +602,7 @@ public class UserController {
 	}
 	
 	@ExceptionHandler(RuntimeException.class)
+	@ResponseStatus(HttpStatus.NOT_FOUND)
 	public String handleException(RuntimeException re, HttpServletRequest request) {
 		return "forward:/error.jsp";
 	}
